@@ -1,40 +1,131 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Página de Inicio</title>
-    <style>
-        /* Estilos para que se vean como botones bonitos */
-        .boton-enlace {
-            display: inline-block;
-            padding: 12px 24px;
-            margin: 10px;
-            background-color: #28a745; /* Color verde */
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-family: Arial, sans-serif;
-            font-weight: bold;
-            transition: background 0.3s;
+<div id="zf_div_SNK43qWLqgqv921SNuIN_WJXP0Q_wDtZ6LWN3KiRbfs">
+</div>
+<script type="text/javascript">
+(function() {
+	try{
+		var f = document.createElement("iframe");
+		
+			var ifrmSrc = 'https://forms.zohopublic.com/ingeurbe/form/WFTrezeweb2024/formperma/SNK43qWLqgqv921SNuIN_WJXP0Q_wDtZ6LWN3KiRbfs?zf_rszfm=1';
+		
+		try {
+			var origenLead = 'ORGANICO'; 
+			var urlParams = new URLSearchParams(window.location.search);
+
+			if (urlParams.has('source')) {
+				origenLead = urlParams.get('source').toUpperCase();
+			} else if (urlParams.has('fbclid')) {
+				origenLead = 'META';
+			} else if (urlParams.has('gclid')) {
+				origenLead = 'GOOGLE';
+			} else if (urlParams.has('utm_source')) {
+				var utmSrc = urlParams.get('utm_source').toLowerCase();
+				if (utmSrc.indexOf('meta') > -1 || utmSrc.indexOf('facebook') > -1 || utmSrc.indexOf('instagram') > -1) {
+					origenLead = 'META';
+				} else if (utmSrc.indexOf('google') > -1) {
+					origenLead = 'GOOGLE';
+				}
+			}
+
+			ifrmSrc += (ifrmSrc.indexOf('?') > 0 ? '&' : '?') + 'source=' + origenLead;
+		} catch(e) {}
+		
+        try{
+			if ( typeof ZFAdvLead != "undefined" && typeof zfutm_zfAdvLead != "undefined" ) {
+				for( var prmIdx = 0 ; prmIdx < ZFAdvLead.utmPNameArr.length ; prmIdx ++ ) {
+				    var utmPm = ZFAdvLead.utmPNameArr[ prmIdx ];
+				    utmPm = ( ZFAdvLead.isSameDomian && ( ZFAdvLead.utmcustPNameArr.indexOf(utmPm) == -1 ) ) ? "zf_" + utmPm : utmPm;
+				    var utmVal = zfutm_zfAdvLead.zfautm_gC_enc( ZFAdvLead.utmPNameArr[ prmIdx ] );
+				    if ( typeof utmVal !== "undefined" ) {
+				      if ( utmVal != "" ) {
+				        if(ifrmSrc.indexOf('?') > 0){
+				             ifrmSrc = ifrmSrc+'&'+utmPm+'='+utmVal;
+				        }else{
+				            ifrmSrc = ifrmSrc+'?'+utmPm+'='+utmVal;
+				        }
+				      }
+				    }
+				}
+			}
+			if ( typeof ZFLead !== "undefined" && typeof zfutm_zfLead !== "undefined" ) {
+				for( var prmIdx = 0 ; prmIdx < ZFLead.utmPNameArr.length ; prmIdx ++ ) {
+		        	var utmPm = ZFLead.utmPNameArr[ prmIdx ];
+		        	var utmVal = zfutm_zfLead.zfutm_gC_enc( ZFLead.utmPNameArr[ prmIdx ] );
+			        if ( typeof utmVal !== "undefined" ) {
+			          if ( utmVal != "" ){
+			            if(ifrmSrc.indexOf('?') > 0){
+			              ifrmSrc = ifrmSrc+'&'+utmPm+'='+utmVal;
+			            }else{
+			              ifrmSrc = ifrmSrc+'?'+utmPm+'='+utmVal;
+			            }
+			          }
+			        }
+		      	}
+			}
+			if (!((new RegExp("[?&]referrername=")).test(ifrmSrc))) {
+            var rfr = window.location.href;
+            
+            try { 
+                rfr = window.self !== window.top ? 
+                    window.top.location.href : 
+                    (/^https?:\/\/[\w.-]+\.[a-zA-Z]{2,}/i.test(rfr) ? rfr : "");
+            } catch (e) {}
+            
+            if (rfr && rfr !== "") {
+                if (rfr.length > 1800) {
+                    var queryIndex = rfr.indexOf('?');
+                    if (queryIndex > -1) {
+                        rfr = rfr.substring(0, queryIndex);
+                    }
+                    if (rfr.length > 1800) {
+                        rfr = rfr.substring(0, 1800);
+                    }
+                }
+                ifrmSrc += ((ifrmSrc.indexOf('?') > 0) ? '&' : '?') + 'referrername=' + encodeURIComponent(rfr);
+            }
         }
-        
-        .boton-enlace:hover {
-            background-color: #218838; /* Oscurece al pasar el mouse */
-        }
-    </style>
-</head>
-<body>
+		}catch(e){}
+	
+		
+		f.src = ifrmSrc;
+		f.style.border="none";
+		f.style.height="436px";
+		f.style.width="90%";
+		f.style.transition="all 0.5s ease";
+		f.setAttribute("aria-label", 'WF_Treze_web_2024');
+		
+		var d = document.getElementById("zf_div_SNK43qWLqgqv921SNuIN_WJXP0Q_wDtZ6LWN3KiRbfs");
+		d.appendChild(f);
+		window.addEventListener('message', function (){
+			var evntData = event.data;
+			if( evntData && evntData.constructor == String ){
+				var zf_ifrm_data = evntData.split("|");
+				if ( zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3 ) {
+					var zf_perma = zf_ifrm_data[0];
+					var zf_ifrm_ht_nw = ( parseInt(zf_ifrm_data[1], 10) + 15 ) + "px";
+					var iframe = document.getElementById("zf_div_SNK43qWLqgqv921SNuIN_WJXP0Q_wDtZ6LWN3KiRbfs").getElementsByTagName("iframe")[0];
+					if ( (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0 ) {
+						var prevIframeHeight = iframe.style.height;
+						var zf_tout = false;
+						if( zf_ifrm_data.length == 3 ) {
+						    iframe.scrollIntoView();
+						    zf_tout = true;
+						}
 
-    <h1>Menú Principal</h1>
-    <p>Selecciona a dónde quieres ir:</p>
-
-    <a href="Piazzatest.html" class="boton-enlace">
-        Ir a Piazza Test
-    </a>
-
-    <a href="corttezzatest.html" class="boton-enlace">
-        Ir a Cortezza Test
-    </a>
-
-</body>
-</html>
+						if ( prevIframeHeight != zf_ifrm_ht_nw ) {
+							if( zf_tout ) {
+							    setTimeout(function(){
+							        iframe.style.height = zf_ifrm_ht_nw;
+							    },500);
+							} else {
+							    iframe.style.height = zf_ifrm_ht_nw;
+							}
+						}
+					}
+				}
+			}
+		}, false);
+    }catch(e){}
+	
+	
+})();
+</script>
